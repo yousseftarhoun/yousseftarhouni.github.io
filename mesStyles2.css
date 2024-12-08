@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.mercury {
+    width: 200px;
+    height: 200px;
+    background-image: url('images.jpeg');
+
+    background-size: cover;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+section {
+text-align: center;
+color: white;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 18px;
+}
